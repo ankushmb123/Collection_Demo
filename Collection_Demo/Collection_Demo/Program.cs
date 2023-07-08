@@ -45,6 +45,13 @@ namespace Collections_Demo
                         Array_List arrayList = new Array_List();
                         arrayList.MyArray();
                         break;
+
+                    case 4:
+                        Console.WriteLine("--------------------");
+                        Dictionary_Demo dictionary_Demo = new Dictionary_Demo();
+                        dictionary_Demo.Diction();
+                        break;
+                        
                 }
             }
         }
