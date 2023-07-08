@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Collection_Demo;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,7 @@ namespace Collections_Demo
                 Console.WriteLine("Choose the below options");
                 Console.WriteLine("1-List");
                 Console.WriteLine("2-Array");
+                Console.WriteLine("3-Array_List");
                 Console.WriteLine("------------------------");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -36,6 +39,11 @@ namespace Collections_Demo
                         Console.WriteLine("----------------------");
                         Array_Demo array_Demo = new Array_Demo();
                         array_Demo.Add();
+                        break;
+                    case 3:
+                        Console.WriteLine("----------------");
+                        Array_List arrayList = new Array_List();
+                        arrayList.MyArray();
                         break;
                 }
             }
